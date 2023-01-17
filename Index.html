@@ -3,15 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="script.js" defer />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-            rel="stylesheet"/>
+            rel="stylesheet"
+        />
         <title>Decodificador - Challenge</title>
+        <script
+            src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <header class="cabecalho">
@@ -21,7 +26,28 @@
             />
         </header>
         <section>
-            <textarea cols="30" rows="10">Digite seu texto</textarea>
+            <textarea
+                name="textarea"
+                cols="30"
+                rows="10"
+                placeholder="Digite seu Texto"
+                id="textarea"
+            ></textarea>
+            <img src="Assets/exclamacao.svg" alt="Sinal de alerta" />
+            <p>Apenas letras minúsculas e sem acento</p>
+            <button id="criptografar">Criptografar</button>
+            <button class="descriptografar">Descriptografar</button>
         </section>
+        <section class="ambiente_retorno">
+            <img
+                src="Assets/Image_human.svg"
+                alt="Uma criança observando um diamante com auxílio de uma lupa"
+            />
+            <p id="mensagemRetorno">Nenhuma mensagem encontrada</p>
+            <p class="textoOrientacaoMensagemRetorno">
+                Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+        </section>
+        <script src="script.js"></script>
     </body>
 </html>
