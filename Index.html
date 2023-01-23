@@ -12,42 +12,54 @@
             rel="stylesheet"
         />
         <title>Decodificador - Challenge</title>
-        <script
-            src="https://code.jquery.com/jquery-3.6.3.min.js"
-            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-            crossorigin="anonymous"
-        ></script>
     </head>
     <body>
         <header class="cabecalho">
             <img
                 src="assets/Logo_Alura.svg"
                 alt="Letra a estilizada representando a logo da plataforma de cursos alura"
+                class="logo"
             />
         </header>
-        <section>
-            <textarea
-                name="textarea"
-                cols="30"
-                rows="10"
-                placeholder="Digite seu Texto"
-                id="textarea"
-            ></textarea>
-            <img src="Assets/exclamacao.svg" alt="Sinal de alerta" />
-            <p>Apenas letras minúsculas e sem acento</p>
-            <button id="criptografar">Criptografar</button>
-            <button class="descriptografar">Descriptografar</button>
-        </section>
-        <section class="ambiente_retorno">
-            <img
-                src="Assets/Image_human.svg"
-                alt="Uma criança observando um diamante com auxílio de uma lupa"
-            />
-            <p id="mensagemRetorno">Nenhuma mensagem encontrada</p>
-            <p class="textoOrientacaoMensagemRetorno">
-                Digite um texto que você deseja criptografar ou descriptografar.
-            </p>
-        </section>
-        <script src="script.js"></script>
+
+        <main>
+            <section class="input">
+                <textarea
+                    class="texto"
+                    cols="41"
+                    rows="4"
+                    placeholder="Digite seu Texto"
+                ></textarea>
+
+                <div>
+                    <div class="aviso">
+                        <img src="Assets/exclamacao.svg" alt="Sinal de alerta" />
+                        <p class="texto-aviso">Apenas letras minúsculas e sem acento</p>
+                    </div>
+                    <div class="botoes">
+                        <button class="criptografar">Criptografar</button>
+                        <button class="descriptografar">Descriptografar</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="output">
+                <!-- <textarea class="mensagem" cols="20" rows="10"></textarea>
+                <button class="copiar">Copiar</button> -->
+                <img
+                    src="Assets/Image_human.svg"
+                    alt="Uma criança observando um diamante com auxílio de uma lupa"
+                    class="img-menino removeCriptografar"
+                />
+                <div class="conteudo-mensagem">
+                    <p class="mensagem-retorno">Nenhuma mensagem encontrada</p>
+                    <p class="removeCriptografar texto-orientacao-mensagem-retorno">
+                        Digite um texto que você deseja criptografar ou
+                        descriptografar.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <script src="js/script.js"></script>
     </body>
 </html>
