@@ -37,23 +37,23 @@
                         <p class="texto-aviso">Apenas letras minúsculas e sem acento</p>
                     </div>
                     <div class="botoes">
-                        <button class="criptografar">Criptografar</button>
-                        <button class="descriptografar">Descriptografar</button>
+                        <button class="criptografar" onclick="btnEncriptar()">Criptografar</button>
+                        <button class="descriptografar" onfocus="this.value = ''; " onclick="btnDesencriptar()">Descriptografar</button>
+                        <button class="copiar" onclick="btnCopiar()">Copiar</button>
                     </div>
                 </div>
             </section>
-
+            
             <section class="output">
-                <!-- <textarea class="mensagem" cols="20" rows="10"></textarea>
-                <button class="copiar">Copiar</button> -->
+                <!-- <textarea class="mensagem" cols="20" rows="10"></textarea> -->
                 <img
-                    src="Assets/Image_human.svg"
-                    alt="Uma criança observando um diamante com auxílio de uma lupa"
-                    class="img-menino removeCriptografar"
+                src="Assets/Image_human.svg"
+                alt="Uma criança observando um diamante com auxílio de uma lupa"
+                class="img-boy "
                 />
                 <div class="conteudo-mensagem">
-                    <p class="mensagem-retorno">Nenhuma mensagem encontrada</p>
-                    <p class="removeCriptografar texto-orientacao-mensagem-retorno">
+                    <p class="mensagem-retorno removeCriptografar1">Nenhuma mensagem encontrada</p>
+                    <p class="removeCriptografar2 texto-orientacao-mensagem-retorno">
                         Digite um texto que você deseja criptografar ou
                         descriptografar.
                     </p>

@@ -42,17 +42,15 @@ main {
         outline: none;
     }
 
-/* .mensagem{
-    background: #FFFFFF;
-    background-image: url(Assets/Image_human.png);
-    background-repeat: no-repeat;
+.mensagem{
     border: none;
-    border-radius: 24px;
-    color: #0A3871;
-    margin: 20px 0 0 20px;
-    padding-left: 20px;
+    color: #0a3871;
+    margin-top: 90px;
+    background: #FFFFFF;
+    font-size: 22px;
+    
 
-} */
+}
 
 .mensagem:focus {
     outline: none;
@@ -90,6 +88,18 @@ main {
     margin-left: 30px;
 }
 
+.copiar {
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    font-size: 16px;
+    margin-left: 30px;
+    /* background: #d8dfe8; */
+}
+
 .output {
     background: #ffffff;
     width: 27vw;
@@ -99,41 +109,29 @@ main {
     justify-content: center;
     align-items: center;
     margin-left: 80px;
-}
+}    
 
-.img-menino {
+.img-boy {
     width: 23vw;
     height: 30vh;
-}
+}    
 
 .conteudo-mensagem {
     padding: 32px;
     text-align: center;
-}
+}    
 
 .mensagem-retorno {
     font-size: 1.5rem;
     font-weight: bold;
     color: #343a40;
     margin-top: 32px;
-}
+}    
 
 .texto-orientacao-mensagem-retorno {
     font-size: 1.1rem;
     color: #495057;
     line-height: 150%;
-}
-.copiar {
-    border: 1px solid #0a3871;
-    border-radius: 24px;
-    color: #0a3871;
-    cursor: pointer;
-    height: 67px;
-    margin: 402px 0 0 45px;
-    width: 336px;
-    font-size: 16px;
-    /* background: #d8dfe8; */
-}
-
+}    
 
 
