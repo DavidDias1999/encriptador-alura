@@ -1,11 +1,10 @@
-var textRemove1 = document.querySelector(".removeCriptografar1")
-var textRemove2 = document.querySelector(".removeCriptografar2")
+var textRemove1 = document.querySelector(".removeCriptografar1");
+var textRemove2 = document.querySelector(".removeCriptografar2");
 
 // Criando o p para trocar com a img
 
 var el = document.createElement("textarea");
 el.classList = "mensagem";
-
 
 // elemento que quero trocar
 
@@ -27,7 +26,6 @@ function btnEncriptar() {
 
     textRemove1.remove();
     textRemove2.remove();
-
 }
 
 function encriptar(stringEncriptada) {
@@ -39,7 +37,7 @@ function encriptar(stringEncriptada) {
         ["u", "ufat"],
     ];
     stringEncriptada = stringEncriptada.toLowerCase();
-    
+
     for (let i = 0; i < matrizCodigo.length; i++) {
         if (stringEncriptada.includes(matrizCodigo[i][0])) {
             stringEncriptada = stringEncriptada.replaceAll(
@@ -59,12 +57,11 @@ function btnDesencriptar() {
     valorDescript = document.createTextNode(textoDesencriptado);
     elDescript.appendChild(valorDescript);
     dad.replaceChild(elDescript, el);
-    
+
     textArea.value = "";
 
     textRemove1.remove();
     textRemove2.remove();
-
 }
 
 function desencriptar(stringDesencriptada) {
@@ -88,20 +85,13 @@ function desencriptar(stringDesencriptada) {
     return stringDesencriptada;
 }
 
+var btnCopy = document.querySelector(".copiar");
 
-var btnCopy = document.querySelector(".copiar")
-
-
-function btnCopiar(){
-    
-    
-    
+function btnCopiar() {
     var textoRetorno = document.querySelector(".mensagem").value;
-    
-    
+
     navigator.clipboard.writeText(textoRetorno);
-    
+
     textoRetorno.value = "";
-    
-    // window.location.reload();
-} 
+
+}
